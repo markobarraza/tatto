@@ -17,6 +17,21 @@ body {
 .container-fluid > .navbar-header{
 	margin: 0;
 }
+/* Separador */
+.separador {
+	text-align: center;
+	padding: 30px 0;
+}
+.separador .line{
+	border: 1px solid gray;
+	width: 10%;
+	display: inline-block;
+}
+.separador .icon-separador{
+	display: inline-block;
+	padding: 0px 30px 0 30px;
+	font-size: 1.4em;
+}
 /* Header */
 .navbar{
 	margin: 0;
@@ -92,7 +107,7 @@ body {
 	text-transform: uppercase;
 	padding: 0 40px;
 }
-.hablemos .entrada p{
+.hablemos .entrada p {
 	text-align: left;
 	padding: 0 40px;
 }
@@ -275,33 +290,124 @@ footer{
 	margin: 100px 0;
 }
 .perfil-datos{
-	padding-left: 50px;
+	padding-left: 150px;
 }
+	@media (max-width: 768px){
+		.perfil-datos{
+			padding-left: 0;
+		}
+	}
 .perfil-datos .perfil-img{
-	width: 250px;
-	height: 400px;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-	
+	position: relative;	
 }
 .perfil-datos .perfil-img .perfil-info{
 	text-align: left;
 	position: absolute;
-	width: 300px;
+	max-width: 50%;
 	left: 150px;
 	top: 100px;
 	
 }
 .perfil-datos .perfil-img .perfil-info h2{
-	font-size: 2em;
+	font-size: 1.3em;
 	color: #fff;
 	background-color: #000;
 	margin: 0;
 	padding: 10px;
+	letter-spacing: 2px;
+}
+.perfil-datos .perfil-img .perfil-info h3{
+	font-size: 1.3em;
+	color: #fff;
+	width: 150px;
+	background-color: #000;
+	display: inline-block;
+	margin: 0;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+.perfil-datos .perfil-img .perfil-info h4{
+	font-size: 1.3em;
+	color: #fff;
+	background-color: #000;
+	margin: 0;
+	padding: 10px;
+	letter-spacing: 2px;
+	margin: 0;
+
+}
+.perfil-datos .perfil-img .perfil-info h4 span{
+	font-size: .6em;
+	color: gray;
+	font-style: italic;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0;
 }
 /*mapa*/
+.perfil-mapa{
+	padding: 0  0 30px 0;
+}
+.perfil-mapa h2{
+	font-size: 1.7em;
+}
+.perfil-mapa .perfil-line{
+	border: 1px solid #000;
+	width: 80%;
+}
 .mapa{
 	margin: 0;
 	padding: 0;
 }
+/* perfil */
+.perfil-1 {
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+
+/* Reseña */
+.resena {
+	text-align: center;
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 10px;
+}
+.resena h2 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.resena p{
+	font-size: 1em;
+	color: gray;
+}
+/* trabajos */
+.trabajos{
+	text-align: center;
+	padding: 50px 0;
+}
+.img-trabajos{
+	padding: 10px 0;
+}
+.ver-instagram{
+	padding: 10px;
+	border: 2px solid #000;
+	display: inline-block;
+	margin: 20px auto;
+}
+.ver-instagram a{
+	text-decoration: none;
+	color: #000;
+}
+.ver-instagram h2{
+	font-size: 1.3em;
+	display: inline;
+	padding: 10px;
+}
+.ver-instagram .fa-instagram{
+	font-size: 1.5em;
+}
+
