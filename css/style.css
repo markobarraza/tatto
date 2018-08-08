@@ -274,14 +274,22 @@ body {
 footer{
 	background-color: #1c1c1c;
 }
-.footer .redes{
+.redes{
 	padding: 30px 0;
 	color: #fff;
 	text-align: center;
 }
-.footer .redes .icon-redes{
+.redes__icon{
 	font-size: 1.3em;
-	padding: 0 10px;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.redes__icon--red {
+	color: red;
+	display: inline-block;
+	font-size: 1.3em;
+	margin: 0 10px;
 }
 
 /* PERFIL TATUADOR DESTACADO */
@@ -361,10 +369,14 @@ footer{
 	padding: 0;
 }
 /* perfil */
-.perfil-1 {
+.perfiles__perfil {
 	margin: 0 auto;
 	text-align: center;
 	padding: 50px 0;
+	list-style: none;
+}
+.perfiles__image {
+	margin: 0 auto;
 }
 
 /* Reseña */
