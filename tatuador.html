@@ -14,13 +14,14 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <!-- Mis Estilos -->
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/my_style.css">
 </head>
 <body>
 
 <header>	
 	<!-- Nav -->
-	<nav class="navbar my-nav">
+	<nav class="navbar my-nav navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -35,10 +36,10 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Home</a></li>
-	        <li><a href="#">Tatuador Destacado</a></li>
-	        <li><a href="#">Somos</a></li>
-	        <li><a href="#">Contacto</a></li>
+	        <li><a href="#"><i class="fas fa-home my-nav__icon"></i>Home</a></li>
+	        <li class="active"><a href="#"><i class="far fa-star my-nav__icon"></i>Tatuador Destacado</a></li>
+	        <li><a href="#"><i class="far fa-user my-nav__icon"></i>Somos</a></li>
+	        <li><a href="#"><i class="far fa-envelope my-nav__icon"></i>Contacto</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -48,30 +49,25 @@
 <main>
 	<section class="perfil">
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row perfil__datos">
 				<div class="col-xs-12 col-md-6">
-					<div class="perfil-datos">
-						<div class="perfil-img">
-							<img class="img-responsive" src="img/perfil-p.jpg" alt="Perfil Principal">
-							<div class="perfil-info">
-								<h2>Cesar Castillo</h2>
-								<h3>30 años</h3>
-								<h4>7 Monster Tattoo
-									<span>Santo Domingo #550 of. A (primer piso)</span>
-								</h4>
-							</div>
-						</div>
+					<img class="img-responsive" src="img/perfil-p.jpg" alt="Perfil Principal">
+					<div class="perfil-info">
+						<h2>Cesar Castillo</h2>
+						<h3>30 años</h3>
+						<h4>7 Monster Tattoo
+							<span>Santo Domingo #550 of. A (primer piso)</span>
+						</h4>
 					</div>
 				</div> 
 
-				<div class="col-xs-12 col-md-6">
-					<div class="perfil-mapa">
-						<h2>Encuentralo</h2>
-						<div class="perfil-line"></div>
+				<div class="col-xs-12 col-md-6 perfil__titulo">
+					<h2>Encuentralo <span> / Estudio</span></h2>
+					<div class="perfil__mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.5259447666754!2d-70.6472853849232!3d-33.43560150413618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c598735893e9%3A0xd35920e649431c79!2sSanto+Domingo+550%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1533533929261" width="90%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
-					<div class="mapa">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.5259447666754!2d-70.6472853849232!3d-33.43560150413618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c598735893e9%3A0xd35920e649431c79!2sSanto+Domingo+550%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1533533929261" width="90%" height="410" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+					<h2>Instagram <span> / Cesar Castillo</span></h2>
+					<div class="perfil__instagram"></div>
 				</div>
 			</div>
 		</div>
@@ -87,8 +83,8 @@
 	</div>
 
 	<!-- section fotos perfil -->
-	<section class="container">
-		<ul class="perfiles row">
+	<section class="container perfiles">
+		<ul class="row">
 			<li class="col-xs-6 col-md-4 perfiles__perfil">
 				<img class="img-responsive perfiles__image" src="img/perfil-1.jpg" alt="">
 			</li>
@@ -96,7 +92,7 @@
 				<img class="img-responsive perfiles__image" src="img/perfil-2.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-4 perfiles__perfil">
-				<img class="img-responsive perfiles__image" src="img/perfil-3.jpg" alt="">
+				<img class="img-responsive perfiles__image-borrar" src="img/perfil-3.jpg" alt="">
 			</li>
 		</ul>
 	</section>
@@ -113,35 +109,34 @@
 	<section class="container trabajos">
 		<ul class="row">
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c1.jpg" alt="">
+				<img class="img-responsive" src="img/c1.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c2.jpg" alt="">
+				<img class="img-responsive" src="img/c2.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c3.jpg" alt="">
+				<img class="img-responsive" src="img/c3.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c4.jpg" alt="">
+				<img class="img-responsive" src="img/c4.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c5.jpg" alt="">
+				<img class="img-responsive" src="img/c5.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c6.jpg" alt="">
+				<img class="img-responsive" src="img/c6.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c7.jpg" alt="">
+				<img class="img-responsive" src="img/c7.jpg" alt="">
 			</li>
 			<li class="col-xs-6 col-md-3">
-				<img class="img-responsive img-trabajos" src="img/c8.jpg" alt="">
+				<img class="img-responsive" src="img/c8.jpg" alt="">
 			</li>
 		</ul>
-		<div class="ver-instagram">
-			<a href="#">
-				<h2>Ver Más</h2>
-				<i class="fab fa-instagram"></i>
-			</a>
+		<div class="trabajos__mas">
+			<h2>
+				<a href="#">Ver Más</a>
+			</h2>
 		</div>
 	</section>
 </main>
