@@ -220,6 +220,12 @@ h3{
 	text-align: center;
 	padding: 50px 0;
 }
+.inspiracion__hero{
+	background-image: url(../img/bg-inspiracion.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+
+}
 .inspiracion h2{
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -357,11 +363,7 @@ h3{
 .perfil__mapa{
 	margin: 0 0 10px 0;
 }
-.perfil__instagram{
-	background-color: gray;
-	height: 200px;
-	width: 90%;
-}
+
 /* perfil */
 .perfiles ul{
 	margin: 0;
@@ -387,7 +389,9 @@ h3{
 }
 .grow:hover {
 	transform: scale(1.05); 
-	box-shadow: 2px 5px 5px rgba(28, 28, 28, 0.741)
+	box-shadow: 2px 5px 5px rgba(28, 28, 28, 0.741);
+	-webkit-box-shadow: 2px 5px 5px rgba(28, 28, 28, 0.741);
+  	-moz-box-shadow: 2px 5px 5px rgba(28, 28, 28, 0.741);
 }
 /* Reseña */
 .resena {
