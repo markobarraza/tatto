@@ -25,21 +25,29 @@
 	<h4>Hablemos de Tatuajes</h4>
 	<div class="my_container">
 		<ul class="row">
-			<li class="col-xs-12 col-md-4 tatuajes__container">
-				<img class="img-responsive tatuajes__img" src="<?php bloginfo( "template_url" ) ?>/assets/images/entrada1.jpg" alt="Entrada 1">
-				<h3>Revista Tattoo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati fugit....</p>
-			</li>
-			<li class="col-xs-12 col-md-4 tatuajes__container">
-				<img class="img-responsive tatuajes__img" src="<?php bloginfo( "template_url" ) ?>/assets/images/entrada2.jpg" alt="Entrada 1">
-				<h3>Revista Tattoo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati fugit....</p>
-			</li>
-			<li class="col-xs-12 col-md-4 tatuajes__container">
-				<img class="img-responsive tatuajes__img" src="<?php bloginfo( "template_url" ) ?>/assets/images/entrada3.jpg" alt="Entrada 1">
-				<h3>Revista Tattoo</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati fugit....</p>
-			</li>
+			<?php
+				$arg = array(
+					'post_type'		 => 'publicacion',
+					'posts_per_page' => 3,
+				);
+			
+				$get_arg = new WP_Query( $arg );
+			
+				while ( $get_arg->have_posts() ) {
+					$get_arg->the_post();
+					$thumb_id = get_post_thumbnail_id();
+					$thumb_url = wp_get_attachment_image_src( $thumb_id, 'thumbnail-size', false );
+				?>
+					
+				<li class="col-xs-12 col-md-4 tatuajes__container">
+					 <img class="img-responsive tatuajes__img" src="<?= $thumb_url[0] ?>" alt="Publicacion"> 
+
+					<h3><?php the_title() ?></h3>
+					<p><?php the_excerpt() ?></p>
+				</li>
+			
+				<?php } wp_reset_postdata();
+			?>
 		</ul>
 	</div>
 </section>

@@ -43,6 +43,9 @@
 	        <li><a href="somos.html"><span class="icon-user-outline my-nav__icon"></span>Somos</a></li>
 	        <li><a href="contacto.html"><span class="icon-mail my-nav__icon"></span>Contacto</a></li>
 	      </ul>
+
+	     
+
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>

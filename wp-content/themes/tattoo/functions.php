@@ -15,6 +15,10 @@ $files = get_files_from( $theme_options['functions'] );
 foreach($files as $file) {
 	require_once $file;
 }
+function longitud_excerpt($length) {
+    return 30;
+}
+add_filter('excerpt_length', 'longitud_excerpt');
 
 
 /**
