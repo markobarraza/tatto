@@ -40,10 +40,12 @@
 				?>
 					
 				<li class="col-xs-12 col-md-4 tatuajes__container">
-					 <img class="img-responsive tatuajes__img" src="<?= $thumb_url[0] ?>" alt="Publicacion"> 
+					 <a href="<?php the_permalink() ?>">
+						 <?php the_post_thumbnail( 'full', array('class' => 'img-responsive tatuajes__img') ) ?>
 
-					<h3><?php the_title() ?></h3>
-					<p><?php the_excerpt() ?></p>
+						<h3><?php the_title() ?></h3>
+						<p><?php the_excerpt() ?></p>
+					 </a>
 				</li>
 			
 				<?php } wp_reset_postdata();

@@ -37,14 +37,19 @@
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
+	      <!-- <ul class="nav navbar-nav navbar-right">
 	        <li class="active"><a href="#"><span class="icon-home-outline my-nav__icon"></span>Home</a></li>
 	        <li><a href="tatuador.html"><span class="icon-star-outline my-nav__icon"></span>Tatuador Destacado</a></li>
 	        <li><a href="somos.html"><span class="icon-user-outline my-nav__icon"></span>Somos</a></li>
 	        <li><a href="contacto.html"><span class="icon-mail my-nav__icon"></span>Contacto</a></li>
-	      </ul>
+	      </ul> -->
 
-	     
+	     <?php if ( has_nav_menu( 'header-menu' ) ) { ?>
+		    <?php wp_nav_menu( array(
+		    	'theme_location' => 'header-menu',
+		    	'menu_class' => 'nav navbar-nav navbar-right'
+		    )); ?>
+		<?php } ?>
 
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
