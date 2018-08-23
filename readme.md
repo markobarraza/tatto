@@ -26,8 +26,8 @@ Creacion de un sitio web que se transforme en un referente en la entrega de info
 
 ### Datos Ingreso WP
 
-User: mbarraza
-Pass: Tattoo.2020
+- **User:** mbarraza
+- **Pass:** Tattoo.2020
 
 
 
