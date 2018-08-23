@@ -660,6 +660,7 @@ h3{
 	width: 650px;
 	max-width: 90%;
 	margin: 0 auto;
+	text-align: justify;
 }
 .contacto__btn{
 	width: 100%;
