@@ -56,10 +56,17 @@
 
 	<!-- Reseña -->
 	<div class="resena">
-		<h2>titulo</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veniam amet autem dolore perspiciatis? Quaerat incidunt laboriosam eius saepe vero ipsam sed magni quasi libero praesentium, recusandae, in, aspernatur. Consequatur! sam sed magni quasi libero praesentium, recusandae, in, aspernatur. Consequatur!</p>
+		<h2>Cesar Castillo</h2>
+		<p>Inmerso durante años en el mundo del diseño publicitario, César Castillo actualmente conocido como “El Ilusionista” decidió dar un vuelco inesperado en su ascendente carrera entre marcas y avisos, para dedicarse de lleno al tatuaje.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquam illum eveniet nostrum sed, eos nulla consequuntur iste repudiandae optio ipsum ut iure minus minima, dolor hic quos libero deleniti.</p>
+		<p>Actualmente, su estilo de tatuaje es en un 100% dedicado al mundo geek, todo lo relacionado con comics, series, peliculas, etc. Son su prioridad al momento de abrir su agenda, Cesar lleva un par de años dedicado al tatuaje, con un estilo en las lineas que realiza similar a las que corresponden a un “sketch” o un boceto. Puedes ver sus trabajos en su instagram <b>@elilusionista</b>, la principal herramienta que ocupar para comunicarse con sus clientes y seguidores</p>
+	</div>
+
+	<!-- Separador -->
+	<div class="separador">
+		<div class="line"></div>
+		<div class="icon-Tattoo-Machine separador__icon"></div>
+		<div class="line"></div>
 	</div>
 
 	<!-- Trabajos -->

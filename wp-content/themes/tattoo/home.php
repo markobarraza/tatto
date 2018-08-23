@@ -11,7 +11,7 @@
 					<h2>cesar castillo</h2>
 					<h3>Diseñador grafico - Ilustrador - tatuador</h3>	
 					<div class="cover__btn">
-						<a href="tatuador.html">Conoce a Cesar</a>
+						<a href="http://localhost:8888/tatuador/">Conoce a Cesar</a>
 					</div>
 				</div>
 				<a href="#top"><span class="icon-arrow-down cover__icon"></span></a>
@@ -41,7 +41,7 @@
 					
 				<li class="col-xs-12 col-md-4 tatuajes__container">
 					 <a href="<?php the_permalink() ?>">
-						 <?php the_post_thumbnail( 'full', array('class' => 'img-responsive tatuajes__img') ) ?>
+						 <?php the_post_thumbnail( 'index', array('class' => 'img-responsive tatuajes__img') ) ?>
 
 						<h3><?php the_title() ?></h3>
 						<p><?php the_excerpt() ?></p>

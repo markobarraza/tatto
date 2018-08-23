@@ -4,6 +4,9 @@ body {
 	padding: 0;
 	font-size: 14px;
 }
+a:hover, a:focus{
+	text-decoration: none;
+}
 .my_container{
 	width: 90%;
 	margin: 0 auto;
@@ -207,6 +210,7 @@ h3{
 	margin: 0;
 	padding: 20px 0;
 	display: inline-block;
+	text-decoration: none;
 }
 .tatuajes__container{
 	background-color: #ededed;
@@ -227,14 +231,16 @@ h3{
 	padding: 0;
 	width: 100%;
 }
-.tatuajes__container h3{
+.tatuajes__container a h3{
 	margin: 0;
 	padding: 10px 0 5px 0;
+	color: #000;
 }
 .tatuajes__container p{
 	font-size: 1em;
 	margin: 0;
 	padding: 5px 0 5px 0;
+	color: #939393;
 }
 /* Ruddet */
 .ruddet{
@@ -506,6 +512,8 @@ h3{
 	font-size: 1.5em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	padding: 10px;
+	font-weight: 700;
 }
 .resena p{
 	font-size: 1em;
@@ -618,7 +626,7 @@ h3{
 .contacto{
 	text-align: center;
 	padding: 100px 0;
-	height: 100vh;
+	height: auto;
 	margin-bottom: 50px;
 }
 	@media (max-width: 768px){
@@ -627,7 +635,7 @@ h3{
 		}
 	}
 .contacto__contenedor{
-	text-align: left;
+	text-align: center;
 	width: 40%;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -662,11 +670,25 @@ h3{
 	padding: 10px 0;
 
 }
+.contacto input{
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #6666;
+	height: 30px;
+}
+.contacto .form-group{
+	text-align: left;
+}
+.contacto textarea{
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #6666;
+}
 /*post*/
 .post{
 	text-align: center;
 }
-.post_cover{
+.post__cover{
 	width: 100%;
 	height: 300px;
 }
