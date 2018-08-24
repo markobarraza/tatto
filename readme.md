@@ -25,6 +25,9 @@ Creacion de un sitio web que se transforme en un referente en la entrega de info
  - Seleccion de Diseños y estilos diferentes Destacados
 
 ### Datos Ingreso WP
+la base de datos lleva por nombre Tattoo.sql.zip
+
+### Datos Ingreso WP
 
 - **User:** mbarraza
 - **Pass:** Tattoo.2308
