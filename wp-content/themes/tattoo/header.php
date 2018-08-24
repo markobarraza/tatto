@@ -32,7 +32,9 @@
 		        <span class=" icon-th-menu icon-nav"></span>
 		        <!-- <i class="fas fa-bars icon-nav"></i> -->
 		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
+		      <a class="navbar-brand" href="#">
+		      	<img class="img-responsive my-nav__img" src="<?php bloginfo( "template_url" ) ?>/assets/images/logo.png" alt="logo-tatto magazine">
+		      </a>
 		    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->

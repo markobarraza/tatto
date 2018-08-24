@@ -74,6 +74,9 @@ h3{
 .my-nav .navbar-header .icon-nav{
 	font-size: 1.5em;
 }
+.my-nav__img{
+	max-width: 130px;
+}
 .nav li a{
 	color: #434343;
 	letter-spacing: 1px;
@@ -94,6 +97,9 @@ h3{
 .my-nav .my-nav__icon{
 	padding: 0 8px 0 0;
 	font-size: 1.3em;
+}
+.navbar-brand{
+	padding: 5px;
 }
 /*COVER*/
 .cover {
@@ -713,7 +719,7 @@ h3{
 	font-style: italic;
 	padding-top: 10px;
 }
-a .post__icon{
+.post__icon{
 	font-size: 1.5em;
 	padding: 20px;
 	display: inline-block;

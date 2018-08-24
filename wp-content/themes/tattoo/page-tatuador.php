@@ -114,11 +114,6 @@
 				<img class="img-responsive" src="<?php bloginfo( "template_url" ) ?>/assets/images/c8.jpg" alt="">
 			</li>
 		</ul>
-		<div class="trabajos__mas">
-			<h2>
-				<a href="#">Ver Más</a>
-			</h2>
-		</div>
 	</section>
 </main>
 

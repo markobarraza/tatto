@@ -12,6 +12,7 @@
 			</div>
 			<h2><?php the_title() ?></h2>
 			<p><?php the_content() ?></p>
+			<span class="icon-home-outline post__icon"></span>
 		<?php } ?>
 	<?php } ?>
 
